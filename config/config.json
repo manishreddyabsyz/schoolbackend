@@ -1,0 +1,9 @@
+{
+    "development": {
+      "username": "root",
+      "password": "Manish@123",
+      "database": "logindb",
+      "host": "localhost",
+      "dialect": "mysql"
+    }
+  }
