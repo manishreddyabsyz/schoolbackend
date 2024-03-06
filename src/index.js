@@ -13,6 +13,34 @@ require('dotenv').config();
 
 app.use(cors());
 // Routes
+// const endPoints=[
+//   "/auth/login",
+//   "/auth/signup",
+//   "/auth/verify-otp",
+//   "/auth/send-otp",
+//   "/auth/forgotpassword",
+//   "/delete-student",
+//   "/delete-teacher",
+//   "/add-teachers",
+//   "/add-students",
+//   "/get-teachers",
+//   "/get-students",
+//   "/update-teacher",
+//   "/update-student",
+//   "/refresh-token",
+//   "/verify-access-token",
+//   "/admin-profile-details",
+//   "/update-admin-details/"
+// ]
+
+// const validateEndPoint=(req,res,next)=>{
+//   const requestPath=req.path;
+//   if(!endPoints.includes(requestPath)){
+//     return res.status(404).json({ message: 'Invalid endpoint' });
+//   }
+//   next();
+// }
+// app.use(validateEndPoint);
 app.use('/auth', authRoutes);
 app.use("/",tokenroutes)
 app.use("/",adminroutes)

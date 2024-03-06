@@ -20,7 +20,13 @@ module.exports = (sequelize, DataTypes) => {
     password: DataTypes.STRING,
     email: DataTypes.STRING,
     subject: DataTypes.STRING,
-    access_token: DataTypes.STRING
+    access_token: DataTypes.STRING,
+    otp:DataTypes.INTEGER,
+    otpexpiry:DataTypes.DATE,
+    firstname:DataTypes.STRING,
+    lastname:DataTypes.STRING,
+    dob:DataTypes.DATE,
+    phonenumber:DataTypes.BIGINT
   }, {
     sequelize,
     modelName: 'Users',
